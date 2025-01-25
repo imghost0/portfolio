@@ -1,0 +1,135 @@
+                                /* for mobile */
+@media (max-width:427px) {
+    .page1{
+        margin:0 10px;
+    }
+    .page1 .big-text {
+      display: flex;
+      margin-top: -2vh;
+      /* background-color: red; */
+      flex-direction: column;
+      align-items: center;
+      gap: 10px  
+  }
+    .page1 .big-text h1 .center-text{
+      /* background-color: red; */
+      margin-left: 7vw;
+    }
+    .page1 .big-text h1 .center-text2{
+      /* background-color: red; */
+      margin-left: 7vw;
+    }
+    .page1 .big-text h1 .center-text3{
+      /* background-color: red; */
+      margin-left: 7vw;
+    }
+    .page1 .big-text h1 .center-text4{
+      /* background-color: red; */
+      margin-left: 7vw;
+    }
+    
+
+
+    .nav-bar .right-nav a{
+        display: none;
+      }
+      .page1 .big-text {
+        display: flex;
+        position: relative;
+        top:0%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px  
+    }
+      .big-text .big-text1 h1 .center-text {
+        padding-left: 0vw; 
+    }
+    
+    .big-text .para1 p .slide {
+        padding-left: 0vw;     
+    }
+    .button-section1 button{
+        width: 40vw;
+        height: 7vh;
+        font-weight: 600;
+        border-radius: 25px;
+      }
+
+      .roller{
+        background-color:#d9ff06;
+        margin-top: 4vh;
+        display: flex;
+        overflow: hidden;  
+    }
+
+    .roller .marque h1{
+      font-size: 14vw;
+  }
+  .roller .marque img{
+      height: 6vh;
+  
+  }
+      .page2{
+        height: 100%;
+        margin:0 20px;
+        display: block;
+    }
+    .page2 .pic1{
+      height: 81vh;
+      width: 100%
+      /* background-color: red; */
+  }
+  .pic1 h1{
+    font-size: 7vh;
+    font-weight: 500;
+    margin-left: 5vw;
+    text-transform: uppercase;
+    }
+    .pic1 img{
+      height: 41vh;
+  }
+  .pic1 p{
+    margin-top: 10px;
+    padding: 0;
+}
+.pic3 video{
+  height: 20vh;
+  
+}
+.page2 .pic2{
+  margin-top:0px;
+  height: 50vh;
+  width: 100%;
+}
+.video{
+   margin-left: -8vw;
+   /* background-color: red; */
+}
+.page2 .pic3 .big-text2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  height: 40%;
+  margin-top: 4vh;
+  /* background-color: greenyellow; */
+
+}
+.big-text2 h1{
+  font-size: 6vh;
+  font-weight: 500;
+  margin-left: 30vw;
+  text-transform: uppercase;
+  /* background-color: red; */
+
+}
+.big-text2 h1 .web{
+  /* background-color: red; */
+  margin-left: 6vw;
+  
+}
+.big-text2 h1 .dev{
+  /* background-color: red; */
+  margin-left:10vw;
+}
+}
