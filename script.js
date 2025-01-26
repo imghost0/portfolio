@@ -1,7 +1,47 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.main'),
-    smooth: true
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.main'),
+//     smooth: true
+// });
+
+
+
+function locomotiveAnimation(){
+  gsap.registerPlugin(ScrollTrigger);
+
+
+
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true
 });
+
+locoScroll.on("scroll", ScrollTrigger.update);
+
+
+ScrollTrigger.scrollerProxy(".main", {
+  scrollTop(value) {
+    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+  }, 
+  getBoundingClientRect() {
+    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+  },
+  
+  pinType: document.querySelector(".main").style.transform ? "transform" : "fixed"
+});
+
+
+
+
+
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+
+ScrollTrigger.refresh();
+
+}
+locomotiveAnimation()
+
+
 Shery.imageEffect(".page2 .pic1 img", {
     style: 3, 
     // debug: true, 
@@ -179,3 +219,17 @@ function wheelAnimation() {
 }
 
 wheelAnimation();
+
+
+gsap.to(".page3 h1",{
+  transform:"translateX(-300%)",
+  scrollTrigger:{
+    trigger:".page3",
+    scroller:".main",
+    // markers:true,
+    start:"top -10%",
+    end:"top -180%",
+    scrub:6,
+    pin:true
+  }
+})

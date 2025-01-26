@@ -185,7 +185,15 @@ body,html{
 }
 .page3{
     height: 100%;
-    margin:0 40px;
-    
-    
+    margin:0px;
+    background-color:black;
 }
+.page3 h1{
+    font-size: 100vh;
+    text-transform: uppercase;
+    color: wheat;
+}
+.page3 h1 .green2{
+    color: #adff2f;
+}
+
