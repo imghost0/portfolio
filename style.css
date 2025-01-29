@@ -185,7 +185,8 @@ body,html{
 }
 .page3{
     height: 100%;
-    margin:0px;
+    
+    margin:0;
     background-color:black;
 }
 .page3 h1{
@@ -195,5 +196,110 @@ body,html{
 }
 .page3 h1 .green2{
     color: #adff2f;
+}
+
+.page5{
+    height: 100vh;
+    margin:0 40px;
+    background-color: #021526;
+    display: flex;
+    
+    
+}
+.page5 .font-img{
+    margin-top: 7vh;
+    margin-left: 2vw;
+    /* background-color: red; */
+}
+.page5 .font-img h1{
+    font-size: 10vh;
+    color: #E2E2B6;
+    text-transform: capitalize;
+}
+.page5 .font-img img{
+    height: 60vh;   
+}
+.page5 .button-font{
+    margin-top: 3.2vw;
+    width: 32%;
+    /* background-color: yellow; */
+
+}
+.button-font button{
+    border: 1px solid transparent;
+    background-color:#adff2f;
+    color:black ;
+    height: 7vh;
+    width: 10vw;
+    border-radius:6px ;
+    margin-top: 65vh;
+    margin-left: 10vw;
+    text-transform: uppercase;
+}
+.page4{
+    height: 100vh;
+    margin:0px;
+    background-color: #8174A0;
+    display: flex;
+    
+}
+.page4 .left-font{
+    width: 39%;
+    background-color:#A6AEBF;
+    margin: 17px;
+    border-radius: 15px;
+}
+.left-font h1{
+    margin: 37% 3vw;
+    font-size: 10vh;
+    text-transform: capitalize;
+}
+.page4 .right-font{
+    width:63%;
+    margin: 17px;
+    border-radius: 15px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.right-font .right-top{
+    height: 50%;
+    background-color:#A6AEBF;
+    border-radius: 10px; 
+}
+.right-top h1{
+    font-size: 10vh;
+    text-transform: capitalize;
+    /* background-color: red;*/
+    display: inline-block;
+    margin-top: 17vh;
+    margin-left: 17vw;
+}
+.right-font .right-bottom{
+    height: 50%;
+    background-color:#A8DF8E;
+    border-radius: 15px;
+}
+.right-bottom h1{
+    font-size: 10vh;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 17vh;
+    margin-left: 17vw;
+}
+.footer{
+    height: 100vh;
+    margin: 0px;
+    background-color: black;
+    color: whitesmoke;
+}
+.footer .top-part{
+    height: 40%;  
+    display: flex;
+}
+.footer .bottom-part h1{
+    display: inline-block;
+    font-size: 50vh;
 }
 
